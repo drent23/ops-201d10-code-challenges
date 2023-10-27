@@ -1,0 +1,76 @@
+Math Functions:
+
+sum=$(($num1 + $num2)) $ calls the variables, one parenthesis for function, one parenthesis for math operation
+    echo $sum
+    
+Arrays:
+
+# Define array
+grocery_list=(apple banana orange onio)
+
+# print size/count of grocery list w/ "@"
+echo ${#grocery_list{@}}
+echo ${#grocery_list{*}}
+
+# print entire list w/ "*". x = "wildcard", tells bash to grab all items in array
+echo ${grocery_list[*]}
+echo ${grocery_list{@}}
+
+# print out first item in list (fundamental idea of computing - zero indexing)
+echo ${grocery_list[0]}
+
+# print out last item in list
+echo ${grocery_list[${#grocery_list[@]}-1]}
+
+# update/replace list items
+grocery_list[0]="mango"
+
+# append/add to list
+new_item=chocolate
+grocery_list+=($new_item)
+grocery_list+="chips"
+grocery_list[4]="tomato"
+
+# deleting array elements or entire array
+unset grocery_list[3]
+unset grocery_list
+
+# ops challenge 4 notes
+paths=(./demo ./demo/dir1 ./demo/dir2 ./demo/dir3)
+mkdir ${paths[*]}
+ls 
+
+Strings: 
+
+# concatenate strings
+str1="Hello,"
+str2=" World"
+str3=$str1$str2
+echo "$str3"
+
+# concat w/ literal strings
+str1="Hello, "
+str2="${str1}World"
+echo "str2"
+
+# Bash doesn't segregate variables by "type"
+# variables are treated as int or str 
+
+# concat variables with digits
+str1="Hello, "
+int1=3
+str2=" Worlds"
+str3="$str1$int1$str2"
+echo "$str3"
+
+# concat strings w/ += operator
+str1="Hello, "
+str1+=" World"
+echo "$str1"
+
+# concat strings in for loop
+str=""
+for ELEMENT in 'Hydrogen' 'Helium' 'Lithium' 'Beryllium'; do
+    str+="${ELEMENT} "
+done 
+echo "$str"
