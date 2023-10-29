@@ -1,3 +1,5 @@
+Bash -
+
 Math Functions:
 
 sum=$(($num1 + $num2)) $ calls the variables, one parenthesis for function, one parenthesis for math operation
@@ -74,3 +76,30 @@ for ELEMENT in 'Hydrogen' 'Helium' 'Lithium' 'Beryllium'; do
     str+="${ELEMENT} "
 done 
 echo "$str"
+
+Loops -
+
+# for loop
+for i in $array
+do
+echo $i
+done
+    Example: names=("Bob" "Jane" "Mike" "Sarah")
+            for name in ${names[@]}
+            do 
+            echo $name
+            done
+
+# while loop
+while [ condition ]; do
+echo/function
+done
+
+    Example: count=4
+            while [ $count -gt 0 ]; do
+            echo "Value of count is: $count"
+            count=$(($count -1))
+            done
+
+Windows CLI - 
+
