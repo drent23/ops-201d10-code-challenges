@@ -1,6 +1,6 @@
 # Ops Challenge: Class 06
 #!/bin/bash
-# Script Name:                  Bash Conditioals
+# Script Name:                  Bash Conditionals
 # Author:                       David Renteria
 # Date of latest revision:      10/30/2023
 # Purpose:                      Script that identifies and kills a process and uses a loop
