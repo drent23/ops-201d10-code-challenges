@@ -3,7 +3,7 @@
 # Script Name:                  Bash Conditionals
 # Author:                       David Renteria
 # Date of latest revision:      10/30/2023
-# Purpose:                      Script that identifies and kills a process and uses a loop
+# Purpose:                      Script that detects if files exist and, if not, creates them
 
 # Declaration of variables
 
