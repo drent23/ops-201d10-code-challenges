@@ -101,7 +101,17 @@ done
             count=$(($count -1))
             done
 
-Windows CLI - 
+Conditionals:
 
-Conditionals
+lshw: lists HW info/details/specs
+
+grep: searches for PATTERNS in each FILE
+
+"|" doesn't print it out to screen, but sends to another cmd for further pipes/cmds
+
+#!/bin/bash
+
+# Main
+# Search output of lshw cmd and return every line w/ the word "bridge" in it
+lshw | grep "bridge" (don't hard code sudo in script, just use it before running file in terminal)
 
