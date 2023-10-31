@@ -1,4 +1,4 @@
-# Ops Challenge: Class 04
+# Ops Challenge: Class 05
 #!/bin/bash
 # Script Name:                  Bash Loops
 # Author:                       David Renteria
