@@ -33,4 +33,5 @@ if errorlevel 8 (
 )
 
 # end of script, similar to Bash
-:end                                                
+:end 
+endlocal
