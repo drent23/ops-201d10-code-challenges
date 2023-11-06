@@ -280,3 +280,6 @@ End
 :: (you can use "pause" instead of "End")
 
 :: "cls" clears command prompt
+
+# Powershell for loop
+
