@@ -22,3 +22,16 @@ get_domain_info() {
 get_domain_info "$user_input"
 # open txt file
 gedit "$domain_info.txt"
+
+# alternate method
+# echo "Enter a domain name: "
+# read domain
+# get_domain_info() {
+    # whois domain
+    # dig domain
+    # host domain
+    # nslookup domain
+# }
+# > = overwriting file, '>>' = appending at bottom/end
+# get_domain_info > domain_info.txt
+# echo "This is appended to the file" >> domain_info.txt
