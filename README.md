@@ -1,4 +1,4 @@
-# Welcome to OPS 201 Challenges Repo :party: !
+# Welcome to OPS 201 Challenges Repo :partying_face:!
 
 ## What is this repo all about?
 In this repo, you'll find various Bash and Powershell automation scripts.  Please keep in mind that I'm new to this and still learning so I hope you en:joy:!
